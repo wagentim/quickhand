@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.example.org/parser_schema" xmlns:tns="http://www.example.org/parser_schema" elementFormDefault="qualified">
+		<element name="site"></element>
+		<element name="startLink"></element>
+		<element name="page" type="tns:page"></element>
+	    <element name="id" type="int"></element>
+	    <element name="block" type="tns:block"></element>
+	    <element name="return" type="int"></element>
+	    <element name="parser" type="string"></element>
+	    
+	   	<complexType name="page">
+	   		<sequence>
+	   			<element name="id" type="int"></element>
+	   			<element name="block" type="tns:block"></element>
+	   		</sequence>
+	   	</complexType>
+	
+	    <complexType name="block">
+	    	<sequence>
+	    		<element name="return" type="int"></element>
+	    		<element name="parser" type="string"></element>
+	    	</sequence>
+	    </complexType>
+	
+</schema>

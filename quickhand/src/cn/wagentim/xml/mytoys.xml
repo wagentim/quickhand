@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<site xsi:noNamespaceSchemaLocation="parser_schema.xsd">
+	<startLink>
+		http://www.mytoys.de/
+	</startLink>
+	<page>
+		<id>1</id>
+		<block>
+			<return>
+				0
+			</return>
+			<parser>
+				img
+			</parser>
+		</block>
+	</page>
+</site>
